@@ -1,7 +1,7 @@
 const ExampleDashboard = () => {
     return (
         <div className="flex">
-            <aside className="w-1/4 bg-gray-900 p-6 h-screen overflow-scroll">
+            <aside className="w-52 bg-gray-900 p-6 overflow-clip">
                 <h1 className="text-white lg:text-2xl sm:text-sm font-semibold">Dashboard</h1>
                 <ul className="mt-4">
                     <li className="mb-2">
@@ -10,7 +10,7 @@ const ExampleDashboard = () => {
                     <li className="mb-2">
                         <a href="#" className="text-gray-300 hover:text-white">Analytics</a>
                     </li>
-                    <li className="mb-2">
+                    <li className="lg:mb-48">
                         <a href="#" className="text-gray-300 hover:text-white">Reports</a>
                     </li>
                 </ul>
