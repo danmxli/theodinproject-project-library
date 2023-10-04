@@ -79,14 +79,14 @@ const TableDemo = () => {
     </table>
   `;    
     return(
-        <div className="bg-neutral-100 dark:bg-slate-950 rounded-lg p-4">
+        <div className="bg-neutral-100 dark:bg-slate-950 rounded-lg p-4 mb-4">
             <h1 className="dark:text-indigo-400 text-2xl mb-4">HTML Table</h1>
-            <p className="lg:max-w-2xl mb-2">
+            <p className="lg:max-w-2xl mb-2 dark:text-gray-400">
                 You can make two-dimensional tables with rows and columns using HTML Tables.
                 Create a table with table tags, then add elements for rows, columns, headers, and more.
             </p>
             <Image src={tabledemo} alt="my_image" width={1000} className="object-cover rounded-lg mb-2"/>
-            <p className="lg:max-w-2xl mb-2">
+            <p className="lg:max-w-2xl mb-2 dark:text-gray-400">
                 Tables can be used to meaningfully show tabular data. It can be used with custom CSS to create a stunning presentation.
             </p>
             <h2 className="dark:text-indigo-400 text-xl mb-2">Source code</h2>

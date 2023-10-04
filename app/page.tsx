@@ -1,6 +1,7 @@
 'use client'
 import Typewriter from 'typewriter-effect';
 import {AiFillGithub} from 'react-icons/ai'
+import "@/styles/custom.css";
 
 export default function Home() {
   return (
