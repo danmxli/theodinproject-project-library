@@ -17,7 +17,7 @@ const Navbar = () => {
     const Menus = [
         { id: "home", title: "Home", href: "/", content: <AiFillHome /> },
         { id: "htmlcss", title: "HTMLCSS", href: "/htmlcss", content: <AiFillHtml5 /> },
-        { id: "javascript", title: "Javascript", href: "/", content: <BiLogoJavascript /> },
+        { id: "javascript", title: "Javascript", href: "/vanillajs", content: <BiLogoJavascript /> },
         { id: "reactjs", title: "ReactJS", href: "/", content: <BiLogoReact /> },
         { id: "nodejs", title: "NodeJS", href: "/", content: <BiLogoNodejs /> },
     ];
