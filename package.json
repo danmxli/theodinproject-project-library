@@ -13,6 +13,7 @@
     "react": "latest",
     "react-dom": "latest",
     "react-icons": "^4.11.0",
+    "tailwind-scrollbar-hide": "^1.1.7",
     "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
