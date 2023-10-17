@@ -1,7 +1,7 @@
 const ExampleDashboard = () => {
     return (
         <div className="flex">
-            <aside className="w-52 bg-gray-900 p-6 overflow-clip">
+            <aside className="w-52 bg-slate-900 p-6 overflow-clip">
                 <h1 className="text-white lg:text-2xl sm:text-sm font-semibold">Dashboard</h1>
                 <ul className="mt-4">
                     <li className="mb-2">
