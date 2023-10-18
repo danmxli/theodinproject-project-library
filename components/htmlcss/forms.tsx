@@ -47,12 +47,20 @@ const FormDemo = () => {
                 The method attribute, which indicates which HTTP method should be used to submit the form, is accepted by the form element. GET and POST are two widely used techniques.
             </p>
             <h2 className="dark:text-indigo-400 text-xl mb-2">Example Form</h2>
-            <ExampleForm />
-            
-            <h2 className="dark:text-indigo-400 text-xl mt-2 mb-2">Source code</h2>
-            <div>
-                <CodeDisplay code={formCode} />
+            <div className="inline-grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div>
+                    <ExampleForm />
+                </div>
+                <div className="p-2 bg-neutral-200 dark:bg-slate-900 border border-gray-400 dark:border-gray-700 rounded">
+                    <h2 className="dark:text-indigo-400 mb-2">HTML source code</h2>
+                    <div>
+                        <CodeDisplay code={formCode} />
+                    </div>
+                </div>
             </div>
+            
+            
+            
         </div>
     );
 };

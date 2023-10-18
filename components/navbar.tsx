@@ -1,19 +1,15 @@
 'use client'
 import React from 'react'
-import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { usePathname } from 'next/navigation'
-import { IoIosArrowDroprightCircle} from "react-icons/io"
-import { AiFillHtml5, AiFillHome} from "react-icons/ai"
+import { IoIosArrowDroprightCircle } from "react-icons/io"
+import { AiFillHtml5, AiFillHome, AiFillGithub } from "react-icons/ai"
 import { BiLogoJavascript, BiLogoReact, BiLogoNodejs } from "react-icons/bi"
-
-import Link from 'next/link'
 
 const Navbar = () => {
     const router = useRouter();
     const pathname = usePathname();
 
-    const [open, SetOpen] = useState(true);
     const Menus = [
         { id: "home", title: "Home", href: "/", content: <AiFillHome /> },
         { id: "htmlcss", title: "HTMLCSS", href: "/htmlcss", content: <AiFillHtml5 /> },
@@ -22,10 +18,12 @@ const Navbar = () => {
         { id: "nodejs", title: "NodeJS", href: "/", content: <BiLogoNodejs /> },
     ];
     return (
-        <div className={`overflow-clip p-5 pt-8 ${open ? "w-48" : "w-20"} bg-neutral-100 dark:bg-slate-950 duration-300`}>
+        <div className={`overflow-clip p-5 pt-8 ${"w-20 sm:w-48"} bg-neutral-100 dark:bg-slate-950`}>
 
             <div>
-                <IoIosArrowDroprightCircle className={`dark:text-indigo-700 rounded-md text-4xl mr-2 mb-8 duration-500 cursor-pointer ${open && "rotate-[180deg]"}`} onClick={() => SetOpen(!open)} />
+                <a href='https://github.com/danmxli/theodinproject-project-library' target='_blank'>
+                    <AiFillGithub className={`dark:text-indigo-700 rounded-md text-4xl mr-2 mb-8 cursor-pointer`} />
+                </a>
             </div>
 
             <ul className="pt-2">
@@ -34,7 +32,7 @@ const Navbar = () => {
                         router.push(menu.href);
                     }}>
                         <span className="text-2xl float-left">{menu.content}</span>
-                        <span className={`duration-100${open ? '' : ' scale-0'}`}>{menu.title}</span>
+                        <span className={`scale-0 sm:scale-100`}>{menu.title}</span>
                     </li>
                 ))}
             </ul>

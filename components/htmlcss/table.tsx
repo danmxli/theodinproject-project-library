@@ -89,9 +89,11 @@ const TableDemo = () => {
             <p className="lg:max-w-2xl mb-2 dark:text-gray-400">
                 Tables can be used to meaningfully show tabular data. It can be used with custom CSS to create a stunning presentation.
             </p>
-            <h2 className="dark:text-indigo-400 text-xl mb-2">Source code</h2>
-            <div>
-                <CodeDisplay code={htmlTableCode} />
+            <div className="p-2 bg-neutral-200 dark:bg-slate-900 border border-gray-400 dark:border-gray-700 rounded">
+                <h2 className="dark:text-indigo-400 mb-2">HTML source code</h2>
+                <div>
+                    <CodeDisplay code={htmlTableCode} />
+                </div>
             </div>
         </div>
     );

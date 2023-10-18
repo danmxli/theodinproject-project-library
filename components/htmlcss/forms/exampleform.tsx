@@ -1,7 +1,7 @@
 const ExampleForm = () => {
 
     return (
-        <form className="inline-block bg-stone-200 dark:bg-slate-900 rounded-lg" action={"/"} target="_blank" method="get">
+        <form className="inline-block bg-neutral-200 dark:bg-slate-900 rounded border border-gray-400 dark:border-gray-700" action={"/"} target="_blank" method="get">
                 <div className="m-4 inline-block">
                     <label className="dark:text-slate-300 font-semibold">Email</label>
                     <input
@@ -39,7 +39,7 @@ const ExampleForm = () => {
                     <div className="m-4">
                         <label className="dark:text-slate-300 font-semibold">Message</label> <br />
                         <textarea
-                        className="text-black dark:text-purple-200 border border-gray-300 dark:border-gray-600 dark:bg-slate-800 focus:outline-none rounded-md mt-1 py-2 px-3 h-32 w-full"
+                        className="text-black dark:text-purple-200 border border-gray-300 dark:border-gray-600 dark:bg-slate-800 focus:outline-none rounded-md mt-1 py-2 px-3 h-24 w-full"
                             placeholder="What are you interested in?"
                         ></textarea>
                     </div>
