@@ -1,5 +1,5 @@
 import React, { useState, ReactNode, HTMLAttributes } from "react";
-import './Tabs.css'
+import './tabs.css'
 
 
 type TabsProps = {
