@@ -1,3 +1,5 @@
+# Project library for The Odin Project by Dan Li.
+
 This is a cumulative project library storing notes and assignments from [The Odin Project](https://www.theodinproject.com/) done by Dan Li.
 
 ## Installation
